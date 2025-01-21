@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* margin: 0.5rem; */
+    font-family: "Roboto", sans-serif; 
+    text-align: center;
+    background-color: rgb(252, 220, 160);
+}
+
+nav {
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 2rem;
+    margin: 10% auto 10% auto;
+    max-width: 600px;
+    line-height: 2rem;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 1rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: beige;
+    color:  #ce2e23;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    font-weight: light;
+}
+
+li {
+    border-top: 1px solid #333;
+}
+
+li a,
+li a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+li a:hover,
+li a:focus {
+    background: #333;
+    color: whitesmoke;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 1s;
+    transition-delay: 0.3s;
+}
+
+.about a {
+    border-radius: 0 0 2rem 2rem;
+}
+
+
+/* || @MEDIA RULES */
+
+@media screen and (max-width: 992px) {
+    nav {
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    nav {
+        max-width: 400px;
+        margin: 50% 10% 0 10%;
+    }
+
+    h2 {
+        font-size: 20px
+    }
+}
+
+/* || DARK THEME RULE */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+    }
+
+    nav {
+        background-color: #332940;
+    }
+
+    h2, ul, li, a {
+        color: #FFF;
+    }
+}
